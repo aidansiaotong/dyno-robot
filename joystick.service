@@ -1,0 +1,11 @@
+[Unit]
+Description=Dyno Joystick Service
+
+[Service]
+ExecStart=/home/aidansiaotong/myenv/bin/python3 /home/aidansiaotong/src/joystick.py
+Restart=always
+RestartSec=5
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target

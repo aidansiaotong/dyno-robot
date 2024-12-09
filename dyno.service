@@ -1,0 +1,12 @@
+[Unit]
+Description=Dyno control service
+Requires=joystick.service
+After=network-online.target
+Wants=network-online.targets
+
+[Service]
+ExecStart=/home/aidansiaotong/myenv/bin/python3 /home/aidansiaotong/src/run_dyno.py
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target
