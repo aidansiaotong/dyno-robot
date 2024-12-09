@@ -37,18 +37,22 @@ def main():
                 break
             
             if command.sit_event == 1:
+                # circle
                 print("Sitting")
                 # insert sit function here
             
             if command.stand_event == 1:
+                # triangle
                 print("Standing")
                 # insert stand function here
                 
             if command.walk_event == 1:
+                # x
                 print("Walking")
                 # insert walk function here
             
             if command.step_up_event == 1:
+                # square
                 print("Stepping up")
                 # insert step up function here
             
