@@ -1,16 +1,10 @@
 # dyno-robot
-Dyno robot control source code.
+**Dyno robot control source code.**
 
 Controller Interface Installation (for a mechanical engineer who barely knows how computers work):
 
 1. Flash Raspberry Pi 5 with Raspbian.
-2. Install to Python virtual environment:
-     a. ds4drv
-     b. msgpack
-     c. numpy
-     d. PS4Joystick
-     e. pyserial
-     f. UDPComms
+2. Install to Python virtual environment: ds4drv, msgpack, numpy, PS4Joystick, pyserial, UDPComms
 3. Put joystick.service and dyno.service in the desktop.
 4. Change the file locations in the service files in ExecStart= to match the
    locations of joystick.py and run-dyno.py
@@ -41,3 +35,12 @@ $ sudo systemctl enable dyno.service
   $ sudo mv ~/Desktop/uinput.conf /etc/modules-load.d/uinput.conf
   $ sudo modprobe uinput
 ```
+13. Connect to wi-fi and reboot the Raspberry Pi. Upon startup, you should be able to pair the Raspberry Pi with a DualShock 4 controller.
+14. Press R1 to activate Dyno.
+
+**CONTROLS**
+- R1: Activate/Deactivate
+- x: Walk (single stride)
+- circle: sit
+- triangle: stand
+- square: step up
